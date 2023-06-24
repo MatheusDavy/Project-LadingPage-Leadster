@@ -31,9 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={PlusJakartaSans.className}>
         <ThemeProvider theme={theme}>
-          <Header />
-          {children}      
-          <GlobalStyle />  
+         
+            <Header />
+            {children}      
+            <GlobalStyle />
+          
         </ThemeProvider>
       </body>
     </html>

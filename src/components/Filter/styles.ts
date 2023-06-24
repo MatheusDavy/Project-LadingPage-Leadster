@@ -1,8 +1,10 @@
 import { fontTemplate } from "@/styles/utils/fonts";
 import styled, {css} from "styled-components";
 import Select  from 'react-select'
+import { Pagination } from "@mui/material";
 
 
+// Groups / Containers
 export const FilterContent = styled.section`
     ${({theme})=> css`
         display: flex;
@@ -47,7 +49,7 @@ export const SelectGroup = styled.div`
         }
     `}
 `
-
+// Filter - Btn / Select
 export const Button = styled.button`
     ${({theme})=> css`
         ${fontTemplate(
@@ -111,4 +113,83 @@ export const SelectInput = styled(Select)`
         }
     `}
 
+`
+
+// Cards
+export const CardGrid = styled.div`
+    ${({theme})=>css`
+    margin-top: 61px;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 31px;
+            justify-content: space-between;
+
+            padding-bottom: 72px;
+            border-bottom: 1px solid ${theme.colors.blue300};
+        }
+    `}
+`
+
+// Pagination
+export const NavigateContent = styled.div`
+    ${({theme}) => css`
+        margin: 34px auto 90px;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .label{
+            ${fontTemplate(
+                    '2.3rem',
+                    '1',
+                    `${theme.fonts.Bold}`,
+                    `${theme.colors.blue900}`,
+                    
+                )}
+        }
+    `}
+`
+export const Navigate = styled(Pagination)`
+    ${({theme})=>css`
+        .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+            background-color: transparent;
+            border: 2px solid ${theme.colors.blue500};
+            ${fontTemplate(
+                '2.6rem',
+                '1',
+                `${theme.fonts.Bold}`,
+                `${theme.colors.blue500}`,
+                
+            )}
+
+
+        }
+
+        .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root{
+            min-height: 43px;
+            min-width: 43px;
+            max-height: 43px;
+            max-width: 43px;
+            border-radius: 7px;
+            ${fontTemplate(
+                '2.6rem',
+                '1',
+                `${theme.fonts.Medium}`,
+                `${theme.colors.blue900}`,
+                
+            )}
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+
+        svg{
+            width: 20px;
+            height: auto;
+            object-fit: contain;
+            fill:  ${theme.colors.blue500};
+        }
+    `}
 `

@@ -10,8 +10,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint01",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "2",
     "url": "https://www.youtube.com/watch?v=video02",
     "category": "Geração de Leads",
@@ -22,8 +22,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs02"
-    },
-    {
+  },
+  {
     "id": "3",
     "url": "https://www.youtube.com/watch?v=video03",
     "category": "Mídia Paga",
@@ -34,8 +34,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint03",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "4",
     "url": "https://www.youtube.com/watch?v=video04",
     "category": "Agências",
@@ -46,8 +46,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs04"
-    },
-    {
+  },
+  {
     "id": "5",
     "url": "https://www.youtube.com/watch?v=video05",
     "category": "Chatbot",
@@ -58,8 +58,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint05",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "6",
     "url": "https://www.youtube.com/watch?v=video06",
     "category": "Marketing Digital",
@@ -70,8 +70,8 @@
     "downloadExcel": "https://www.example.com/download/excel06",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "7",
     "url": "https://www.youtube.com/watch?v=video07",
     "category": "Geração de Leads",
@@ -82,8 +82,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint07",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "8",
     "url": "https://www.youtube.com/watch?v=video08",
     "category": "Mídia Paga",
@@ -94,8 +94,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs08"
-    },
-    {
+  },
+  {
     "id": "9",
     "url": "https://www.youtube.com/watch?v=video09",
     "category": "Agências",
@@ -106,8 +106,8 @@
     "downloadExcel": "https://www.example.com/download/excel09",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "10",
     "url": "https://www.youtube.com/watch?v=video10",
     "category": "Chatbot",
@@ -118,8 +118,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs10"
-    },
-    {
+  },
+  {
     "id": "11",
     "url": "https://www.youtube.com/watch?v=video11",
     "category": "Marketing Digital",
@@ -130,8 +130,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint11",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "12",
     "url": "https://www.youtube.com/watch?v=video12",
     "category": "Geração de Leads",
@@ -142,8 +142,8 @@
     "downloadExcel": "https://www.example.com/download/excel12",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "13",
     "url": "https://www.youtube.com/watch?v=video13",
     "category": "Mídia Paga",
@@ -154,8 +154,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs13"
-    },
-    {
+  },
+  {
     "id": "14",
     "url": "https://www.youtube.com/watch?v=video14",
     "category": "Agências",
@@ -166,8 +166,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint14",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "15",
     "url": "https://www.youtube.com/watch?v=video15",
     "category": "Chatbot",
@@ -178,8 +178,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs15"
-    },
-    {
+  },
+  {
     "id": "16",
     "url": "https://www.youtube.com/watch?v=video16",
     "category": "Marketing Digital",
@@ -190,8 +190,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint16",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "17",
     "url": "https://www.youtube.com/watch?v=video17",
     "category": "Geração de Leads",
@@ -202,8 +202,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs17"
-    },
-    {
+  },
+  {
     "id": "18",
     "url": "https://www.youtube.com/watch?v=video18",
     "category": "Mídia Paga",
@@ -214,8 +214,8 @@
     "downloadExcel": "https://www.example.com/download/excel18",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "19",
     "url": "https://www.youtube.com/watch?v=video19",
     "category": "Agências",
@@ -226,8 +226,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint19",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "20",
     "url": "https://www.youtube.com/watch?v=video20",
     "category": "Chatbot",
@@ -238,8 +238,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs20"
-    },
-    {
+  },
+  {
     "id": "21",
     "url": "https://www.youtube.com/watch?v=video21",
     "category": "Marketing Digital",
@@ -250,8 +250,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint21",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "22",
     "url": "https://www.youtube.com/watch?v=video22",
     "category": "Geração de Leads",
@@ -262,8 +262,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs22"
-    },
-    {
+  },
+  {
     "id": "23",
     "url": "https://www.youtube.com/watch?v=video23",
     "category": "Mídia Paga",
@@ -274,8 +274,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint23",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "24",
     "url": "https://www.youtube.com/watch?v=video24",
     "category": "Agências",
@@ -286,8 +286,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs24"
-    },
-    {
+  },
+  {
     "id": "25",
     "url": "https://www.youtube.com/watch?v=video25",
     "category": "Chatbot",
@@ -298,8 +298,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint25",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "26",
     "url": "https://www.youtube.com/watch?v=video26",
     "category": "Marketing Digital",
@@ -310,8 +310,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs26"
-    },
-    {
+  },
+  {
     "id": "27",
     "url": "https://www.youtube.com/watch?v=video27",
     "category": "Geração de Leads",
@@ -322,8 +322,8 @@
     "downloadExcel": "https://www.example.com/download/excel27",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "28",
     "url": "https://www.youtube.com/watch?v=video28",
     "category": "Mídia Paga",
@@ -334,8 +334,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs28"
-    },
-    {
+  },
+  {
     "id": "29",
     "url": "https://www.youtube.com/watch?v=video29",
     "category": "Agências",
@@ -346,8 +346,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint29",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "30",
     "url": "https://www.youtube.com/watch?v=video30",
     "category": "Chatbot",
@@ -358,8 +358,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs30"
-    },
-    {
+  },
+  {
     "id": "31",
     "url": "https://www.youtube.com/watch?v=video31",
     "category": "Marketing Digital",
@@ -370,8 +370,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint31",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "32",
     "url": "https://www.youtube.com/watch?v=video32",
     "category": "Geração de Leads",
@@ -382,8 +382,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs32"
-    },
-    {
+  },
+  {
     "id": "33",
     "url": "https://www.youtube.com/watch?v=video33",
     "category": "Mídia Paga",
@@ -394,8 +394,8 @@
     "downloadExcel": "https://www.example.com/download/excel33",
     "downloadPowerPoint": "",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "34",
     "url": "https://www.youtube.com/watch?v=video34",
     "category": "Agências",
@@ -406,8 +406,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint34",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "35",
     "url": "https://www.youtube.com/watch?v=video35",
     "category": "Chatbot",
@@ -418,8 +418,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs35"
-    },
-    {
+  },
+  {
     "id": "36",
     "url": "https://www.youtube.com/watch?v=video36",
     "category": "Marketing Digital",
@@ -430,8 +430,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint36",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "37",
     "url": "https://www.youtube.com/watch?v=video37",
     "category": "Geração de Leads",
@@ -442,8 +442,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs37"
-    },
-    {
+  },
+  {
     "id": "38",
     "url": "https://www.youtube.com/watch?v=video38",
     "category": "Mídia Paga",
@@ -454,8 +454,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint38",
     "downloadDocs": ""
-    },
-    {
+  },
+  {
     "id": "39",
     "url": "https://www.youtube.com/watch?v=video39",
     "category": "Agências",
@@ -466,8 +466,8 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs39"
-    },
-    {
+  },
+  {
     "id": "40",
     "url": "https://www.youtube.com/watch?v=video40",
     "category": "Chatbot",
@@ -478,5 +478,5 @@
     "downloadExcel": "",
     "downloadPowerPoint": "",
     "downloadDocs": "https://www.example.com/download/docs40"
-    }
-    ]
+  }
+]
