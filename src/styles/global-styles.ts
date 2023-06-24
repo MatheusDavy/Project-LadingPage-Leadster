@@ -26,6 +26,10 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    a{
+        text-decoration: none;
+    }
+
     .container{
         width: 90%;
         max-width: 1140px;
