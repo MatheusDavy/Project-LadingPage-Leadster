@@ -1,5 +1,6 @@
 import {createGlobalStyle, css} from 'styled-components'
 import home from '../assets/images/home.png'
+import { lenisScroll } from './utils/lennis'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -12,11 +13,10 @@ export const GlobalStyle = createGlobalStyle`
 
     html{
         font-size: 62.5%;
-        scroll-behavior: smooth;
     }
 
     body{
-        background-image: url(${home.src});
+        /* background-image: url(${home.src}); */
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: auto;
@@ -30,11 +30,37 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
+    ul,li{
+        list-style: none;
+    }
+
     .container{
         width: 90%;
         max-width: 1140px;
         display: flex;
         margin: 0 auto;
+    }
+
+
+    /* Lenis Scrool */
+    html.lenis {
+        height: auto;
+    }
+
+    .lenis.lenis-smooth {
+        scroll-behavior: auto;
+    }
+
+    .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+    }
+
+    .lenis.lenis-stopped {
+        overflow: hidden;
+    }
+
+    .lenis.lenis-scrolling iframe {
+        pointer-events: none;
     }
     
 `

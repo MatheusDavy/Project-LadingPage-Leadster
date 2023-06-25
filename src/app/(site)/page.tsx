@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import HeroBanner from "@/components/HeroBanner";
 import { BannerContent, BannerImage, BannerText, HomeContent } from "./styles";
 import FilterCard from "@/components/Filter";
@@ -11,7 +12,6 @@ import ImageRating from '../../assets/images/Icons/rating.webp'
 import ImageSealRd from '../../assets/images/selo_RD.png'
 
 import cardData from '../../assets/data/cards.json'
-import Link from "next/link";
 
 
 export default function Home() {

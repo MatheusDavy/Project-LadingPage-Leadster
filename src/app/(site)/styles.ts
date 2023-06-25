@@ -24,7 +24,6 @@ export const BannerContent = styled.section`
         display: flex;
         background-color: ${theme.colors.blue200};
         position: relative;
-        opacity: 0.3;
         overflow: hidden;
         height: fit-content;
         .container{
@@ -32,7 +31,7 @@ export const BannerContent = styled.section`
             display: grid;
             grid-template-columns: 50% 1fr;
             gap: 93px;
-            padding: 47px 0;
+            padding-top: 47px;
             position: relative;
             z-index: 2;
         }
@@ -67,6 +66,10 @@ export const BannerImage = styled(Image)`
 `
 
 export const BannerText = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 176px 0px 100px;
+
     ${({theme})=> css`
         .title{
             ${fontTemplate(
@@ -76,7 +79,6 @@ export const BannerText = styled.div`
                 `${theme.colors.blue900}`,
             )}
             letter-spacing: -0.5px;
-            margin-top: 176px;
         }
 
         .description{

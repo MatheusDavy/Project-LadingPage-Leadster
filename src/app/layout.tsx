@@ -1,4 +1,8 @@
 'use client'
+
+// Animation Scripts
+import '../animation/scrool'
+
 import { GlobalStyle } from '@/styles/global-styles'
 import { ThemeProvider } from 'styled-components'
 import { theme } from '@/styles/theme'
@@ -8,6 +12,7 @@ import Header from '@/components/Header/inde'
 
 // Font
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Create Next App',
@@ -34,8 +39,9 @@ export default function RootLayout({
          
             <Header />
             {children}      
+            <Footer />
             <GlobalStyle />
-          
+
         </ThemeProvider>
       </body>
     </html>
