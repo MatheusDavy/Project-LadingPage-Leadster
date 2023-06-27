@@ -1,7 +1,7 @@
 'use client'
 
 // Animation Scripts
-import '../animation/scrool'
+import '../animation/main'
 
 import { GlobalStyle } from '@/styles/global-styles'
 import { ThemeProvider } from 'styled-components'
@@ -34,6 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://www.youtube.com/iframe_api"></script>
+      </head>
       <body className={PlusJakartaSans.className}>
         <ThemeProvider theme={theme}>
          

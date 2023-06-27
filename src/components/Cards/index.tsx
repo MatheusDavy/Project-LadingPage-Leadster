@@ -1,16 +1,20 @@
 import Image from "next/image"
 import { CardContent, ImageContent, Title } from "./styles"
-import FilterCard from "../Filter"
+import { useModalPostContext } from "@/context/modal"
+
 
 interface Props {
     image: string
     title: string
     tag?: string | any
+    id: string | number
 }
 
-export function Card({ image, title, tag = 'h1' }: Props) {
+export function Card({ image, title, tag = 'h1', id }: Props) {
+    const {openCloseModal} = useModalPostContext()
+
     function handleClickButton(){
-        console.log('click')
+        openCloseModal(id, true)
     }
 
     return (

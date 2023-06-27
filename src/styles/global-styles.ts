@@ -1,6 +1,8 @@
 import {createGlobalStyle, css} from 'styled-components'
 import home from '../assets/images/home.png'
-import { lenisScroll } from './utils/lennis'
+import { enterAnimation } from '@/animation/styles/enter'
+import { lenisScroll } from '@/animation/styles/scroll'
+// Style Lib
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -41,26 +43,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
     }
 
-
-    /* Lenis Scrool */
-    html.lenis {
-        height: auto;
-    }
-
-    .lenis.lenis-smooth {
-        scroll-behavior: auto;
-    }
-
-    .lenis.lenis-smooth [data-lenis-prevent] {
-        overscroll-behavior: contain;
-    }
-
-    .lenis.lenis-stopped {
-        overflow: hidden;
-    }
-
-    .lenis.lenis-scrolling iframe {
-        pointer-events: none;
-    }
+    ${lenisScroll}
+    ${enterAnimation};
     
 `

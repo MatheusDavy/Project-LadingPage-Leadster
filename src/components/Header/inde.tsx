@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 export default function Header(){
     return(
         <HeaderContent>
-            <div className="container">
+            <div data-animate className="container">
                 <LinkLogo href=""><Image src={logo} alt='Logo'/></LinkLogo>
             </div>
         </HeaderContent>

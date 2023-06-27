@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 
 import { Button, CardGrid, FilterContent, FilterGroup, NavigateContent, Navigate, SelectGroup, SelectInput } from "./styles";
 import { Card } from "../Cards";
+import { ModalView } from "../Modal";
 
 // Interfaces
 export interface PostProps {
@@ -48,6 +49,8 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
     const [currentPage, setCurrentPage] = useState<number>(1)
     const [filteredPost, setFilteredPost] = useState<PostProps[]>([])
     const [paginationPost, setPostPagination] = useState<PostProps[]>(datas)
+
+    const [modalView, setModalView] = useState({})
 
     /*------------------ UseEffects ------------*/
     useEffect(() => {
@@ -139,7 +142,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
                 <div className="container">
                     <AnimatePresence>
                         {paginationPost?.map((card: PostProps) => (
-                            <Card key={card.id} image={''} title={'Como aumentar a sua geração de Leads feat. Traktor'} tag="h3" />
+                            <Card key={card.id} id={card.id} image={''} title={card.title} tag="h3" />
                         ))}
                     </AnimatePresence>
                 </div>
@@ -149,6 +152,8 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
                 <span className='label'>Página</span>
                 <Navigate onChange={handlePageChange} count={offset} shape="rounded" />
             </NavigateContent>
+
+            <ModalView />
         </>
     )
 }
