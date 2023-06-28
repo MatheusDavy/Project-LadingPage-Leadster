@@ -1,3 +1,4 @@
+'use client'
 import { HeaderContent, LinkLogo } from "./styles";
 // Images
 import Image from "next/image";
