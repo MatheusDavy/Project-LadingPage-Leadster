@@ -33,8 +33,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        
         <title>Leadster</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="Webnars Landster" />
