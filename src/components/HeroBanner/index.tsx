@@ -13,19 +13,19 @@ export default function HeroBanner() {
     const titleAnimate = useRef<HTMLDivElement>(null);
     const image = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (textAnimate.current && titleAnimate.current && image.current) {
-        splitting({ target: textAnimate.current, by: 'chars' });
-        splitting({ target: titleAnimate.current, by: 'chars' });
+    useEffect(() => {
+        if (textAnimate.current && titleAnimate.current && image.current) {
+            splitting({ target: textAnimate.current, by: 'chars' });
+            splitting({ target: titleAnimate.current, by: 'chars' });
 
-        setTimeout(async ()=>{
-            await charAnimations(titleAnimate.current)
-            setTimeout(()=>{
-                animateOneElement(image.current)
-            }, 2200)
-        }, 1000)
-    }
-  }, []);
+            setTimeout(async () => {
+                await charAnimations(titleAnimate.current)
+                setTimeout(() => {
+                    animateOneElement(image.current)
+                }, 2200)
+            }, 1000)
+        }
+    }, []);
     return (
         <BannerContent>
             <div className="container">
@@ -33,13 +33,13 @@ export default function HeroBanner() {
                 <Title ref={titleAnimate}>Menos Conversinha,
                     <br />
                     <p ref={textAnimate}>
-                        Mais Conversão 
-                        <Image
-                            src={detailText}
-                            alt="details"
-                            ref={image}
-                            data-animate
-                        />
+                        Mais Conversão
+                        <div className="image" ref={image} data-animate>
+                            <Image
+                                src={detailText}
+                                alt="details"
+                            />
+                        </div>
                     </p>
                 </Title>
                 <Separator />
