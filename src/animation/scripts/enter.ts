@@ -37,7 +37,6 @@ function animateSequentialElement(){
     })
 }
 
-
 export function charAnimations(el: any){
     const element = el.querySelectorAll('.char')
     gsap.fromTo(
