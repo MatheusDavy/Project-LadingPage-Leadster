@@ -19,8 +19,11 @@ export const BannerContent = styled.section`
             height: fit-content;
             align-items: center;
         }
-
     `}
+
+    @media (max-width: 599px) {
+        padding: 100px 0px;
+    }
 `
 
 export const Text = styled.p`
@@ -39,6 +42,10 @@ export const Text = styled.p`
         padding: 8px 21px;
         text-transform: uppercase;
     `}
+
+    @media (max-width: 599px) {
+        font-size: 1rem;
+    }
 `
 
 export const Title = styled.h1`
@@ -72,6 +79,23 @@ export const Title = styled.h1`
         }
         }
 `}
+
+@media (max-width: 599px) {
+        font-size: 3rem;
+        letter-spacing: 0px;
+        p{
+            font-size: 4.5rem;
+            letter-spacing: 0px;
+            img{
+                width: 30px;
+                height: auto;
+                object-fit: contain;
+
+                top: 0;
+                right: -12px;
+            }
+        }
+    }
 `
 
 export const Separator = styled.hr`
@@ -97,4 +121,7 @@ export const Description = styled.p`
         letter-spacing: -0.1px;
 
     `}
+    @media (max-width: 599px) {
+        font-size: 1.4rem;
+    }
 `

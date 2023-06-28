@@ -15,13 +15,18 @@ export const GlobalStyle = createGlobalStyle`
 
     html{
         font-size: 62.5%;
+        @media (min-width:599px) and (max-width: 1080px) {
+            font-size: 52%;
+        }
     }
 
     body{
-        /* background-image: url(${home.src}); */
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: auto;
+        @media (max-width: 1399px) {
+            zoom: 0.85;
+        }
     }
 
     button{

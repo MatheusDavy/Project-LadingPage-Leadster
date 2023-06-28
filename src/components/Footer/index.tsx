@@ -42,7 +42,7 @@ export default function Footer() {
 
                         </div>
                         <p className='links'>Email: <a href={`mailto:${ContactMidia.email}`}>{ContactMidia.email}</a></p>
-                        <p className='links'>Telefone: <a href={`tel:${ContactMidia.phone.replace(' ', '').replace(/[()]/g, '')}`}>{ContactMidia.phone}</a></p>
+                        <p className='links'>Telefone: <a href={`tel:${ContactMidia.phone.replace(/\D/g, '')}`}>{ContactMidia.phone}</a></p>
 
                     </ContactGroup>
 

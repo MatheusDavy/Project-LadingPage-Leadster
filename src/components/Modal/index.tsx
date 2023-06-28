@@ -24,7 +24,7 @@ export function ModalView() {
                 if(post.id == modalProps.postId){
                     setTimeout(()=>{
                         setPostData(post)
-                    }, 3000)
+                    }, 500)
                 }
             })
         }
@@ -44,7 +44,7 @@ export function ModalView() {
 
 
                         <Title className="title">{postData.title}</Title>
-                        <Iframe className="video-modal" src={postData.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></Iframe>
+                        <Iframe className="video-modal" src={postData.url} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></Iframe>
                         <ContentText>
                             <p className="title">Descrição</p>
                             <hr />

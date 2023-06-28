@@ -37,6 +37,15 @@ export const LogoContent = styled(Link)`
         )}
     }
     `}
+
+    @media (max-width: 599px) {
+        img{
+            width: 150px;
+        }
+        .text{
+            font-size: 1.3rem;
+        }
+    }
 `
 
 // Links
@@ -45,6 +54,11 @@ export const LinkContent = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
+
+    @media (max-width: 599px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 `
 
 export const LinkGroup = styled.div`
@@ -82,6 +96,21 @@ export const LinkGroup = styled.div`
         }
         
     `}
+
+
+    @media (max-width: 599px) {
+        .title{
+            font-size: 1.7rem;
+        }
+
+        .list-nav{
+            margin-top: 20px;
+            gap: 15px;
+             &--link{
+                font-size: 1.5rem;
+             }
+        }
+    }
 `
 
 export const ContactGroup = styled.div`
@@ -112,12 +141,21 @@ export const ContactGroup = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            
+
+                &:hover{
+                    background:${theme.colors.blue500};
+                    svg{
+                        fill:${theme.colors.white};
+                    }
+                }
 
                 svg{
                     fill:${theme.colors.blue300};
 
                     width: 20px;
                     height: auto;
+                    transition: 0.4s;
                 }
             }
         }
@@ -153,6 +191,31 @@ export const ContactGroup = styled.div`
             
         }
     `}
+
+    @media (max-width: 599px) {
+        margin-top: 50px;
+        .title{
+            text-align: center;
+        }
+
+        .social-midias{
+            justify-content: center;
+            &--link{
+                
+            }
+        }
+
+        .links{
+            text-align: center;
+            a{
+                
+            }
+
+            
+        }
+ 
+
+    }
 `
 
 // Bottom
@@ -184,4 +247,15 @@ export const FooterBootom = styled.div`
             }
         }
     `}
+
+    @media (max-width: 599px) {
+        .container{
+            flex-direction: column-reverse;
+            gap: 20px;
+            justify-content: center;
+        }
+        .copyright, .locale{
+            text-align: center;
+        }
+    }
 `

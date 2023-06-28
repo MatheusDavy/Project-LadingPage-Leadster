@@ -1,10 +1,11 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence } from 'framer-motion'
 
 import { Button, CardGrid, FilterContent, FilterGroup, NavigateContent, Navigate, SelectGroup, SelectInput } from "./styles";
 import { Card } from "../Cards";
 import { ModalView } from "../Modal";
+import { setSmoothScrollTo } from "@/animation/scripts/anchor";
 
 // Interfaces
 export interface PostProps {
@@ -33,13 +34,15 @@ interface SelectProps {
 
 interface FilterCardProps {
     datas: PostProps[]
-    postPerView?: number
+    postPerViewProps?: number
 }
 
 
 
 // Components
-export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps) {
+export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardProps) {
+
+    const postPerView = window.screen.width > 600 ? postPerViewProps : 5
 
     /*------------------ Const / Variables ------------*/
     const [offset, setOffset] = useState<number>(0)
@@ -50,6 +53,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
     const [currentPage, setCurrentPage] = useState<number>(1)
     const [filteredPost, setFilteredPost] = useState<PostProps[]>([])
     const [paginationPost, setPostPagination] = useState<PostProps[]>(datas)
+    const container = useRef<HTMLDivElement>(null);
 
     /*------------------ UseEffects ------------*/
     useEffect(() => {
@@ -103,8 +107,10 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
     }
 
     function handlePageChange(event: any, page: number) {
-        if (currentPage != page) {
+        if (currentPage != page && container.current) {
             setCurrentPage(page)
+            const distance = container.current.offsetTop
+            setSmoothScrollTo(0, distance, 1000)
         }
     }
 
@@ -119,7 +125,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
 
     return (
         <>
-            <FilterContent data-animate='up'>
+            <FilterContent data-animate='up' ref={container}>
                 <div className="container">
                     <FilterGroup>
                         {categories.map((category, index) => {

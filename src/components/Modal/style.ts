@@ -36,8 +36,8 @@ export const ModalContent = styled.div`
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: auto;
-    max-height: calc(80vh);
+    height: fit-content;
+    max-height: calc(95vh);
     width: 90%;
     max-width: 600px;
     background-color: white;

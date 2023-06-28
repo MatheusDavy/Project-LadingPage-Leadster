@@ -17,8 +17,11 @@ export const HeaderContent = styled.header`
             align-items: center;
             height: fit-content;
         }
-
     `}
+
+    @media (max-width: 599px) {
+        padding: 20px 0px;
+    }
 `
 
 export const LinkLogo = styled.a`
@@ -27,6 +30,10 @@ export const LinkLogo = styled.a`
             width: 204px;
             height: auto;
             object-fit: contain;
+            @media (max-width: 599px) {
+                width: 150px;
+            }   
         }
+        
 
 `

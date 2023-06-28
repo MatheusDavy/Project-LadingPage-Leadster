@@ -55,6 +55,10 @@ export function charAnimations(el: any){
         })
 }
 
+export function animateOneElement(el: any){   
+    el.classList.add(classAnimation)  
+}
+
 // Call Animation
 window.addEventListener('scroll', ()=>{
     animateElement()
