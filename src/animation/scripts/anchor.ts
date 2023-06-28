@@ -1,4 +1,5 @@
 export function setSmoothScrollTo(endX: number, endY: number, duration: number) {
+    if (typeof window !== "undefined"){
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
     const distanceX = endX - startX;
@@ -22,4 +23,5 @@ export function setSmoothScrollTo(endX: number, endY: number, duration: number) 
         }
         window.scroll(newX, newY);
     }, 1000 / 60);
+}
 }

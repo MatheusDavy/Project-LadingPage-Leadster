@@ -17,6 +17,8 @@ import Footer from '@/components/Footer'
 // Image
 import Favicon from '../assets/images/favicon.png'
 
+import dynamic from "next/dynamic";
+
 const PlusJakartaSans = Plus_Jakarta_Sans({
   weight: ['200', '300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],

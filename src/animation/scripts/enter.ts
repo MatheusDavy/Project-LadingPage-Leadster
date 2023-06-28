@@ -7,18 +7,21 @@ const percentScreen = window.screen.width < 999 ? 0.99 : 0.95
 
 //  Functions
 function animateElement(){
-    const elements = document.querySelectorAll('[data-animate]')
-    elements.forEach(el => {
-            const distance = el.getBoundingClientRect().top
-            const callAnimation = window.screen.height * percentScreen
-
-            if (distance < callAnimation) {
-                el.classList.add(classAnimation)
-            }
-    })
+    if (typeof window !== "undefined") {
+        const elements = document.querySelectorAll('[data-animate]')
+        elements.forEach(el => {
+                const distance = el.getBoundingClientRect().top
+                const callAnimation = window.screen.height * percentScreen
+    
+                if (distance < callAnimation) {
+                    el.classList.add(classAnimation)
+                }
+        })
+    }
 }
 
 function animateSequentialElement(){
+    if (typeof window !== "undefined") {
     const sequential = document.querySelectorAll("[data-sequential]")
     sequential.forEach(container => {
         const staggers = container.querySelectorAll('[data-sequential-stagger]')
@@ -36,8 +39,10 @@ function animateSequentialElement(){
         }
     })
 }
+}
 
 export function charAnimations(el: any){
+    if (typeof window !== "undefined") {
     const element = el.querySelectorAll('.char')
     gsap.fromTo(
         element,
@@ -53,16 +58,21 @@ export function charAnimations(el: any){
             stagger: 0.025,
             opacity: 1,
         })
+    }
 }
 
 export function animateOneElement(el: any){   
-    el.classList.add(classAnimation)  
+    if (typeof window !== "undefined") {
+        el.classList.add(classAnimation)  
+    }
 }
 
 // Call Animation
+if (typeof window !== "undefined"){
 window.addEventListener('scroll', ()=>{
     animateElement()
     animateSequentialElement()
 })
 
 window.addEventListener('load', animateElement)
+}
