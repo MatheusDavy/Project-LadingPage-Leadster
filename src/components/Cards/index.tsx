@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { CardContent, ImageContent, Title } from "./styles"
-import { useModalPostContext } from "@/context/modal"
+import { useModalPostContext } from "../../context/modal/index"
 
 
 interface Props {

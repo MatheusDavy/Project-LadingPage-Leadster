@@ -40,6 +40,7 @@ interface FilterCardProps {
 
 // Components
 export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps) {
+
     /*------------------ Const / Variables ------------*/
     const [offset, setOffset] = useState<number>(0)
 
@@ -49,8 +50,6 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
     const [currentPage, setCurrentPage] = useState<number>(1)
     const [filteredPost, setFilteredPost] = useState<PostProps[]>([])
     const [paginationPost, setPostPagination] = useState<PostProps[]>(datas)
-
-    const [modalView, setModalView] = useState({})
 
     /*------------------ UseEffects ------------*/
     useEffect(() => {
@@ -120,7 +119,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
 
     return (
         <>
-            <FilterContent>
+            <FilterContent data-animate='up'>
                 <div className="container">
                     <FilterGroup>
                         {categories.map((category, index) => {
@@ -138,7 +137,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
                 </div>
             </FilterContent>
 
-            <CardGrid >
+            <CardGrid data-animate>
                 <div className="container">
                     <AnimatePresence>
                         {paginationPost?.map((card: PostProps) => (
@@ -158,7 +157,7 @@ export default function FilterCard({ datas, postPerView = 9, }: FilterCardProps)
     )
 }
 
-const ButtonsCategory = ({ text, index, activeFunction, isActive }: ButtonProps) => {
+export const ButtonsCategory = ({ text, index, activeFunction, isActive }: ButtonProps) => {
     /*------------------ Function ------------*/
     function handleActiveThisButton() {
         activeFunction(index)
@@ -171,7 +170,7 @@ const ButtonsCategory = ({ text, index, activeFunction, isActive }: ButtonProps)
     )
 }
 
-const SelectFilter = ({ setFilter }: SelectProps) => {
+export const SelectFilter = ({ setFilter }: SelectProps) => {
     const options = [
         { value: 'none', label: 'Limpar' },
         { value: 'publish', label: 'Data de Pulicação' },

@@ -6,11 +6,8 @@ import { useModalPostContext } from "@/context/modal"
 import { PostProps } from "../Filter"
 import postsDatas from '../../assets/data/cards.json'
 
-interface Props {
-    id: string | number
-}
 
-export function ModalView({ id }: Props) {
+export function ModalView() {
     const { openCloseModal, modalProps } = useModalPostContext()
     const [postData, setPostData] = useState<PostProps | void>()
 
@@ -37,11 +34,11 @@ export function ModalView({ id }: Props) {
 
     return (
         <ModalLayer className={modalProps.isOpen ? 'opening' : ''}>
-            <ModalContent>
+            <ModalContent data-testid="modal-content">
                 {postData != undefined ? (
 
                     <>
-                        <ButtonClose onClick={handleCloseModal}>
+                        <ButtonClose onClick={handleCloseModal} data-testid="close-button">
                             <GrFormClose />
                         </ButtonClose>
 
@@ -93,7 +90,7 @@ export function ModalView({ id }: Props) {
                         </ContentDownloads>
                     </>
                 ) : (
-                    <Loader />
+                    <Loader data-testid="loader" />
                 )}
 
             </ModalContent>

@@ -41,6 +41,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1140px;
         display: flex;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     ${lenisScroll}

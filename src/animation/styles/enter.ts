@@ -41,5 +41,9 @@ export const enterAnimation = css`
         transform: translateY(50px);
     }
 }
+    .char{
+        opacity: 0;
+        display: -webkit-inline-box;
+    }
 
 `  

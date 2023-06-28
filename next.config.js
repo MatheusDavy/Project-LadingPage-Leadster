@@ -4,6 +4,5 @@ const nextConfig = {
         reactStrictMode: true,
         styledComponents:true,
     },
-
 }
 module.exports = nextConfig

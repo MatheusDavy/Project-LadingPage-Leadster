@@ -120,6 +120,7 @@ export const CardGrid = styled.div`
     ${({theme})=>css`
     margin-top: 61px;
         .container{
+            overflow: visible;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 31px;

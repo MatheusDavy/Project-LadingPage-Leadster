@@ -8,7 +8,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '@/styles/theme'
 
 // Compoents
-import Header from '@/components/Header/inde'
+import Header from '@/components/Header'
 
 // Font
 import { Plus_Jakarta_Sans } from 'next/font/google'

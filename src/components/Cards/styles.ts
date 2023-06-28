@@ -1,4 +1,4 @@
-import { fontTemplate } from "@/styles/utils/fonts";
+import { fontTemplate } from "../../styles/utils/fonts";
 import styled, {css} from "styled-components";
 import {motion} from 'framer-motion'
 

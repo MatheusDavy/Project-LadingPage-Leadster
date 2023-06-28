@@ -37,9 +37,29 @@ function animateSequentialElement(){
     })
 }
 
+
+export function charAnimations(el: any){
+    const element = el.querySelectorAll('.char')
+    gsap.fromTo(
+        element,
+        0.7,
+        {
+            transformOrigin: "center",
+            rotationY: 90,
+            x: 30
+        },
+        {
+            rotationY: 0.1,
+            x: 0,
+            stagger: 0.025,
+            opacity: 1,
+        })
+}
+
 // Call Animation
 window.addEventListener('scroll', ()=>{
     animateElement()
     animateSequentialElement()
 })
+
 window.addEventListener('load', animateElement)

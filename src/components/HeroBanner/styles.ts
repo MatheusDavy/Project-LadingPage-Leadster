@@ -43,12 +43,10 @@ export const Text = styled.p`
 
 export const Title = styled.h1`
     ${({theme})=> css`
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     ${fontTemplate(
             '5rem',
-            '1',
+            '1.2',
             `${theme.fonts.Regular}`,
             `${theme.colors.blue900}`,
             'center'
@@ -56,8 +54,7 @@ export const Title = styled.h1`
     letter-spacing: -1.2px;
     margin-top: 19px;
 
-
-    span{
+    p{
         position: relative;
         ${fontTemplate(
         '9rem',
