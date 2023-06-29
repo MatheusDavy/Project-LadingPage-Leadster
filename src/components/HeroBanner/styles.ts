@@ -62,7 +62,7 @@ export const Title = styled.h1`
     letter-spacing: -1.2px;
     margin-top: 19px;
 
-    p{
+    span{
         position: relative;
         ${fontTemplate(
         '9rem',
@@ -84,7 +84,7 @@ export const Title = styled.h1`
 @media (max-width: 599px) {
         font-size: 3rem;
         letter-spacing: 0px;
-        p{
+        span{
             font-size: 4.5rem;
             letter-spacing: 0px;
             img{

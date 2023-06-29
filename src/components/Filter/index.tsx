@@ -38,7 +38,7 @@ interface FilterCardProps {
 
 
 // Components
-export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardProps) {
+export default function FilterCard({ datas, postPerViewProps = 6, }: FilterCardProps) {
 
     const postPerView = typeof window != 'undefined' ? window.screen.width > 999 ? postPerViewProps : 3 : 3
 
@@ -70,7 +70,6 @@ export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardP
 
     useEffect(() => {
         if (filteredPost) setOffset(Number.isInteger(filteredPost.length / postPerView) ? (filteredPost.length / postPerView) : Math.floor(filteredPost.length / postPerView) + 1)
-        console.log(paginationPost.length)
         let postsFiltered
         if (currentPage == 1) {
             postsFiltered = filteredPost.slice(0, postPerView)
@@ -90,7 +89,7 @@ export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardP
                 const dateB = new Date(b.publicationDate);
 
                 if (isNaN(dateA.getTime()) || isNaN(dateB.getTime())) {
-                    return 0; 
+                    return 0;
                 }
 
                 return dateB.getTime() - dateA.getTime();
@@ -149,7 +148,7 @@ export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardP
 
             <NavigateContent>
                 <span className='label'>Página</span>
-                <Navigate onChange={handlePageChange} count={offset} shape="rounded" />
+                <Navigate onChange={handlePageChange} count={offset} shape="rounded" page={currentPage} />
             </NavigateContent>
 
             <ModalView />

@@ -40,7 +40,7 @@ export default function RootLayout({
           <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
           
         </head>
-        <body className={PlusJakartaSans.className} onload={callAnimations()}>
+        <body className={PlusJakartaSans.className}>
           <ThemeProvider theme={theme}>
             <GlobalStyle/>
             <Header />
@@ -50,6 +50,7 @@ export default function RootLayout({
           </ThemeProvider>
         </body>
       </html>
+
     )
   
 }

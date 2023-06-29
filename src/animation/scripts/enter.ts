@@ -6,7 +6,7 @@ import { classAnimation } from "../styles/enter";
 const percentScreen = 0.99
 
 //  Functions
-function animateElement(){
+export function animateElement(){
         const elements = document.querySelectorAll('[data-animate]')
         elements.forEach(el => {
                 const distance = el.getBoundingClientRect().top
@@ -65,15 +65,12 @@ export function animateOneElement(el: any){
 
 // Call Animation
 
-export function callAnimations(){
+
     if(typeof window !='undefined'){
-        console.log("hi")
         window.addEventListener('scroll', ()=>{
             animateElement()
             animateSequentialElement()
         })
         
-        window.addEventListener('load', animateElement)
-    }
-    
-}
+        document.body.addEventListener('load', animateElement)
+    }    
