@@ -58,7 +58,7 @@ export function ModalView() {
                             <div className="buttons">
 
                                 {postData.downloadExcel != '' ? (
-                                    <LinksDownload download={''} type="excel">
+                                    <LinksDownload href="" download={''} type="excel">
                                         <div className="icon">
                                             <SlCloudDownload />
                                         </div>
@@ -67,7 +67,7 @@ export function ModalView() {
                                 ) : ('')}
 
                                 {postData.downloadDocs != '' ? (
-                                    <LinksDownload download={''} type="docs">
+                                    <LinksDownload  href="" download={''} type="docs">
                                         <div className="icon">
                                             <SlCloudDownload />
                                         </div>
@@ -77,7 +77,7 @@ export function ModalView() {
 
                                 
                                 {postData.downloadPowerPoint != '' ? (
-                                    <LinksDownload download={''} type="powerpoint">
+                                    <LinksDownload href="" download={''} type="powerpoint">
                                         <div className="icon">
                                             <SlCloudDownload />
                                         </div>

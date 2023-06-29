@@ -1,11 +1,9 @@
 'use client'
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence } from 'framer-motion'
-
 import { Button, CardGrid, FilterContent, FilterGroup, NavigateContent, Navigate, SelectGroup, SelectInput } from "./styles";
 import { Card } from "../Cards";
 import { ModalView } from "../Modal";
-import { setSmoothScrollTo } from "@/animation/scripts/anchor";
 
 // Interfaces
 export interface PostProps {
@@ -42,11 +40,10 @@ interface FilterCardProps {
 // Components
 export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardProps) {
 
-    const postPerView = window.screen.width > 600 ? postPerViewProps : 5
+    const postPerView = typeof window != 'undefined' ? window.screen.width > 999 ? postPerViewProps : 3 : 3
 
     /*------------------ Const / Variables ------------*/
     const [offset, setOffset] = useState<number>(0)
-
     const [categoryActive, setCategoryActive] = useState(0)
     const [categories, setCategories] = useState<string[]>([])
 
@@ -70,7 +67,6 @@ export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardP
         setFilteredPost(postsFiltered)
         setCurrentPage(1)
     }, [])
-
 
     useEffect(() => {
         if (filteredPost) setOffset(Number.isInteger(filteredPost.length / postPerView) ? (filteredPost.length / postPerView) : Math.floor(filteredPost.length / postPerView) + 1)
@@ -109,8 +105,6 @@ export default function FilterCard({ datas, postPerViewProps = 9, }: FilterCardP
     function handlePageChange(event: any, page: number) {
         if (currentPage != page && container.current) {
             setCurrentPage(page)
-            const distance = container.current.offsetTop
-            setSmoothScrollTo(0, distance, 1000)
         }
     }
 

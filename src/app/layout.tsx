@@ -17,8 +17,6 @@ import Footer from '@/components/Footer'
 // Image
 import Favicon from '../assets/images/favicon.png'
 
-import dynamic from "next/dynamic";
-
 const PlusJakartaSans = Plus_Jakarta_Sans({
   weight: ['200', '300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
@@ -32,27 +30,28 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <head>
-        <title>Leadster</title>
-        <meta charSet="UTF-8" />
-        <meta name="description" content="Webnars Landster" />
-        <meta name="keywords" content="Webnars, Landster, landing page, marketing, chatboot, geraçao de leads, mídia paga, agências" />
-        <meta name="author" content="Matheus Davy" />
+    return (
+      <html lang="en">
+        <head>
+          <title>Leadster</title>
+          <meta charSet="UTF-8" />
+          <meta name="description" content="Webnars Landster" />
+          <meta name="keywords" content="Webnars, Landster, landing page, marketing, chatboot, geraçao de leads, mídia paga, agências" />
+          <meta name="author" content="Matheus Davy" />
 
-        <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
-      </head>
-      <body className={PlusJakartaSans.className}>
-        <ThemeProvider theme={theme}>
+          <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
+        </head>
+        <body className={PlusJakartaSans.className}>
+          <ThemeProvider theme={theme}>
 
-          <Header />
-          {children}
-          <Footer />
-          <GlobalStyle />
+            <Header />
+            {children}
+            <Footer />
+            <GlobalStyle />
 
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+          </ThemeProvider>
+        </body>
+      </html>
+    )
+  
 }
