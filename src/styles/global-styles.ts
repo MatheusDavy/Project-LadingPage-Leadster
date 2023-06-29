@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         background-size: 100%;
         background-repeat: no-repeat;
         min-height: auto;
-        @media (max-width: 1399px) {
+        @media (min-width:599px) and (max-width: 1399px) {
             zoom: 0.85;
         }
     }

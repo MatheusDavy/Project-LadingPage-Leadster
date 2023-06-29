@@ -259,13 +259,14 @@ export const Loader = styled.div`
 
  ${({theme}) => css`
            margin: 100px 0px;
-  width: 50px;
+           width: 50px;
   height: 50px;
   display: grid;
   border-radius: 50%;
-  -webkit-mask: radial-gradient(farthest-side, #0000 40%, #000 41%);
-  background: linear-gradient(0deg, #766df480 50%, #766df4ff 0) center/4px 100%,
-    linear-gradient(90deg, #766df440 50%, #766df4bf 0) center/100% 4px;
+  -webkit-mask:radial-gradient(farthest-side,#0000 40%,#000 41%);
+  background:
+    linear-gradient(0deg ,#0084ff80 50%,#0084ffFF 0) center/4px 100%,
+    linear-gradient(90deg,#0084ff40 50%,#0084ffBF 0) center/100% 4px;
   background-repeat: no-repeat;
   animation: s3 1s infinite steps(12);
 
