@@ -172,7 +172,7 @@ export const ButtonsCategory = ({ text, index, activeFunction, isActive }: Butto
 
 export const SelectFilter = ({ setFilter }: SelectProps) => {
     const options = [
-        { value: 'none', label: 'Limpar' },
+        { value: 'none', label: 'Automático' },
         { value: 'publish', label: 'Data de Pulicação' },
         { value: 'relevance', label: 'Relevancia' },
     ]
