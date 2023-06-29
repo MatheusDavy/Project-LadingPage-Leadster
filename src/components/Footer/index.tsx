@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <FooterContent>
             <div className="container" data-sequential>
-                <LogoContent href={'/'}>
+                <LogoContent href={'/'} aria-label="Ir para Home">
                     <Image data-animate='down' src={ImageLogo} alt='Logo Leadster' />
                     <span data-animate className="text">Transformando visitantes em clientes.</span>
                 </LogoContent>
@@ -23,7 +23,7 @@ export default function Footer() {
 
                     {LinksFooter.map((link, index) => (
                         <LinkGroup key={index} data-sequential-stagger="up">
-                            <h4 className="title">{link.category}</h4>
+                            <h5 className="title">{link.category}</h5>
                             <ul className="list-nav">
                                 {link.links.map((link, index) => (
                                     <li key={index}><Link href={link.path} className="list-nav--link">{link.page}</Link></li>
@@ -32,10 +32,10 @@ export default function Footer() {
                         </LinkGroup>
                     ))}
                     <ContactGroup data-sequential-stagger="up">
-                        <h4 className="title">Siga a Leadster</h4>
+                        <h5 className="title">Siga a Leadster</h5>
                         <div className="social-midias">
                             {ContactMidia.socialMidias.map((midia, index) => (
-                                <Link key={index} href={midia.url} className="social-midias--link">
+                                <Link key={index} href={midia.url} className="social-midias--link" aria-label={`Visitar ${midia.url}`}>
                                     {midia.icon}
                                 </Link>
                             ))}

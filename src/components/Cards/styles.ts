@@ -32,7 +32,7 @@ export const ImageContent = styled.div`
     }
 `
 
-export const Title = styled.h1<TitleProps>`
+export const Title = styled.h3<TitleProps>`
     ${({theme})=> css`
     flex-grow: 2;
     display: flex;

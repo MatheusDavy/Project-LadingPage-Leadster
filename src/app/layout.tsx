@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
     return (
-      <html lang="en">
+      <html lang="pt-BR">
         <head>
           <title>Leadster</title>
           <meta charSet="UTF-8" />
@@ -37,14 +37,14 @@ export default function RootLayout({
           <meta name="keywords" content="Webnars, Landster, landing page, marketing, chatboot, geraçao de leads, mídia paga, agências" />
           <meta name="author" content="Matheus Davy" />
           <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
+          
         </head>
         <body className={PlusJakartaSans.className}>
           <ThemeProvider theme={theme}>
-
+            <GlobalStyle />
             <Header />
             {children}
             <Footer />
-            <GlobalStyle />
 
           </ThemeProvider>
         </body>

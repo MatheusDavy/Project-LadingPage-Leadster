@@ -15,7 +15,7 @@ export default function Header(){
     return(
         <HeaderContent>
             <div data-animate ref={image} className="container">
-                <LinkLogo href=""><Image src={logo} alt='Logo'/></LinkLogo>
+                <LinkLogo href="/" aria-label="Ir para Home"><Image src={logo} alt='Logo'/></LinkLogo>
             </div>
         </HeaderContent>
     )
