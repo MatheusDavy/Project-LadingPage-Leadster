@@ -64,11 +64,16 @@ export function animateOneElement(el: any){
 }
 
 // Call Animation
-if(typeof window !='undefined'){
-    window.addEventListener('scroll', ()=>{
-        animateElement()
-        animateSequentialElement()
-    })
+
+export function callAnimations(){
+    if(typeof window !='undefined'){
+        console.log("hi")
+        window.addEventListener('scroll', ()=>{
+            animateElement()
+            animateSequentialElement()
+        })
+        
+        window.addEventListener('load', animateElement)
+    }
     
-    window.addEventListener('load', animateElement)
 }

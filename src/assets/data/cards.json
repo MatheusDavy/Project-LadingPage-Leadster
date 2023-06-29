@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "url": "https://www.youtube.com/watch?v=video01",
+    "url": "https://www.youtube.com/embed/EW6QAM4ypVE",
     "category": "Marketing Digital",
     "publicationDate": "2023-01-01",
     "relevance": 4,
@@ -13,7 +13,7 @@
   },
   {
     "id": "2",
-    "url": "https://www.youtube.com/watch?v=video02",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2023-02-01",
     "relevance": 5,
@@ -25,7 +25,7 @@
   },
   {
     "id": "3",
-    "url": "https://www.youtube.com/watch?v=video03",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2023-03-01",
     "relevance": 3,
@@ -37,7 +37,7 @@
   },
   {
     "id": "4",
-    "url": "https://www.youtube.com/watch?v=video04",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2023-04-01",
     "relevance": 4,
@@ -49,7 +49,7 @@
   },
   {
     "id": "5",
-    "url": "https://www.youtube.com/watch?v=video05",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2023-05-01",
     "relevance": 5,
@@ -61,11 +61,11 @@
   },
   {
     "id": "6",
-    "url": "https://www.youtube.com/watch?v=video06",
+    "url": "https://www.youtube.com/embed/PHAfkczqlMY",
     "category": "Marketing Digital",
     "publicationDate": "2023-06-01",
     "relevance": 3,
-    "title": "O futuro do marketing digital: tendências e previsões",
+    "title": "Estratégias de curto e longo prazo no Marketing Digitals",
     "description": "Descubra as tendências e previsões para o futuro do marketing digital e esteja à frente da concorrência.",
     "downloadExcel": "https://www.example.com/download/excel06",
     "downloadPowerPoint": "",
@@ -73,7 +73,7 @@
   },
   {
     "id": "7",
-    "url": "https://www.youtube.com/watch?v=video07",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2023-07-01",
     "relevance": 4,
@@ -85,7 +85,7 @@
   },
   {
     "id": "8",
-    "url": "https://www.youtube.com/watch?v=video08",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2023-08-01",
     "relevance": 5,
@@ -97,7 +97,7 @@
   },
   {
     "id": "9",
-    "url": "https://www.youtube.com/watch?v=video09",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2023-09-01",
     "relevance": 3,
@@ -109,7 +109,7 @@
   },
   {
     "id": "10",
-    "url": "https://www.youtube.com/watch?v=video10",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2023-10-01",
     "relevance": 4,
@@ -121,11 +121,11 @@
   },
   {
     "id": "11",
-    "url": "https://www.youtube.com/watch?v=video11",
+    "url": "https://www.youtube.com/embed/aT88TbvdPEY",
     "category": "Marketing Digital",
     "publicationDate": "2023-11-01",
     "relevance": 5,
-    "title": "Marketing digital orientado por dados: tomando decisões inteligentes",
+    "title": "Mercado, Produto, Modelo e Canais - O Mix de variáveis do Marketing Digital",
     "description": "Saiba como utilizar dados e análises para orientar suas estratégias de marketing digital e tomar decisões inteligentes.",
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint11",
@@ -133,7 +133,7 @@
   },
   {
     "id": "12",
-    "url": "https://www.youtube.com/watch?v=video12",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2023-12-01",
     "relevance": 3,
@@ -145,7 +145,7 @@
   },
   {
     "id": "13",
-    "url": "https://www.youtube.com/watch?v=video13",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2024-01-01",
     "relevance": 4,
@@ -157,7 +157,7 @@
   },
   {
     "id": "14",
-    "url": "https://www.youtube.com/watch?v=video14",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2024-02-01",
     "relevance": 5,
@@ -169,7 +169,7 @@
   },
   {
     "id": "15",
-    "url": "https://www.youtube.com/watch?v=video15",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2024-03-01",
     "relevance": 3,
@@ -181,7 +181,7 @@
   },
   {
     "id": "16",
-    "url": "https://www.youtube.com/watch?v=video16",
+    "url": "https://www.youtube.com/embed/46Kh53ibWQk",
     "category": "Marketing Digital",
     "publicationDate": "2024-04-01",
     "relevance": 4,
@@ -193,7 +193,7 @@
   },
   {
     "id": "17",
-    "url": "https://www.youtube.com/watch?v=video17",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2024-05-01",
     "relevance": 5,
@@ -205,7 +205,7 @@
   },
   {
     "id": "18",
-    "url": "https://www.youtube.com/watch?v=video18",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2024-06-01",
     "relevance": 3,
@@ -217,7 +217,7 @@
   },
   {
     "id": "19",
-    "url": "https://www.youtube.com/watch?v=video19",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2024-07-01",
     "relevance": 4,
@@ -229,7 +229,7 @@
   },
   {
     "id": "20",
-    "url": "https://www.youtube.com/watch?v=video20",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2024-08-01",
     "relevance": 5,
@@ -241,11 +241,11 @@
   },
   {
     "id": "21",
-    "url": "https://www.youtube.com/watch?v=video21",
+    "url": "https://www.youtube.com/embed/gK8uPCkka7c",
     "category": "Marketing Digital",
     "publicationDate": "2024-09-01",
     "relevance": 3,
-    "title": "E-mail marketing: estratégias para campanhas de sucesso",
+    "title": "Os passos do Marketing Digital para Startups (Webinar completo)",
     "description": "Aprenda estratégias eficazes de e-mail marketing para criar campanhas de sucesso e aumentar suas taxas de conversão.",
     "downloadExcel": "",
     "downloadPowerPoint": "https://www.example.com/download/powerpoint21",
@@ -253,7 +253,7 @@
   },
   {
     "id": "22",
-    "url": "https://www.youtube.com/watch?v=video22",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2024-10-01",
     "relevance": 4,
@@ -265,7 +265,7 @@
   },
   {
     "id": "23",
-    "url": "https://www.youtube.com/watch?v=video23",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2024-11-01",
     "relevance": 5,
@@ -277,7 +277,7 @@
   },
   {
     "id": "24",
-    "url": "https://www.youtube.com/watch?v=video24",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2024-12-01",
     "relevance": 3,
@@ -289,7 +289,7 @@
   },
   {
     "id": "25",
-    "url": "https://www.youtube.com/watch?v=video25",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2025-01-01",
     "relevance": 4,
@@ -301,7 +301,7 @@
   },
   {
     "id": "26",
-    "url": "https://www.youtube.com/watch?v=video26",
+    "url": "https://www.youtube.com/embed/gK8uPCkka7c",
     "category": "Marketing Digital",
     "publicationDate": "2025-02-01",
     "relevance": 5,
@@ -313,7 +313,7 @@
   },
   {
     "id": "27",
-    "url": "https://www.youtube.com/watch?v=video27",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2025-03-01",
     "relevance": 3,
@@ -325,7 +325,7 @@
   },
   {
     "id": "28",
-    "url": "https://www.youtube.com/watch?v=video28",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2025-04-01",
     "relevance": 4,
@@ -337,7 +337,7 @@
   },
   {
     "id": "29",
-    "url": "https://www.youtube.com/watch?v=video29",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2025-05-01",
     "relevance": 5,
@@ -349,7 +349,7 @@
   },
   {
     "id": "30",
-    "url": "https://www.youtube.com/watch?v=video30",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2025-06-01",
     "relevance": 3,
@@ -361,7 +361,7 @@
   },
   {
     "id": "31",
-    "url": "https://www.youtube.com/watch?v=video31",
+    "url": "https://www.youtube.com/embed/gK8uPCkka7c",
     "category": "Marketing Digital",
     "publicationDate": "2025-07-01",
     "relevance": 4,
@@ -373,7 +373,7 @@
   },
   {
     "id": "32",
-    "url": "https://www.youtube.com/watch?v=video32",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2025-08-01",
     "relevance": 5,
@@ -385,7 +385,7 @@
   },
   {
     "id": "33",
-    "url": "https://www.youtube.com/watch?v=video33",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2025-09-01",
     "relevance": 3,
@@ -397,7 +397,7 @@
   },
   {
     "id": "34",
-    "url": "https://www.youtube.com/watch?v=video34",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2025-10-01",
     "relevance": 4,
@@ -409,7 +409,7 @@
   },
   {
     "id": "35",
-    "url": "https://www.youtube.com/watch?v=video35",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2025-11-01",
     "relevance": 5,
@@ -421,7 +421,7 @@
   },
   {
     "id": "36",
-    "url": "https://www.youtube.com/watch?v=video36",
+    "url": "https://www.youtube.com/embed/gK8uPCkka7c",
     "category": "Marketing Digital",
     "publicationDate": "2025-12-01",
     "relevance": 3,
@@ -433,7 +433,7 @@
   },
   {
     "id": "37",
-    "url": "https://www.youtube.com/watch?v=video37",
+    "url": "https://www.youtube.com/embed/SNqC88vk2bg",
     "category": "Geração de Leads",
     "publicationDate": "2026-01-01",
     "relevance": 4,
@@ -445,7 +445,7 @@
   },
   {
     "id": "38",
-    "url": "https://www.youtube.com/watch?v=video38",
+    "url": "https://www.youtube.com/embed/QGY9SPjFYkc",
     "category": "Mídia Paga",
     "publicationDate": "2026-02-01",
     "relevance": 5,
@@ -457,7 +457,7 @@
   },
   {
     "id": "39",
-    "url": "https://www.youtube.com/watch?v=video39",
+    "url": "https://www.youtube.com/embed/7tzPezCThOM",
     "category": "Agências",
     "publicationDate": "2026-03-01",
     "relevance": 3,
@@ -469,7 +469,7 @@
   },
   {
     "id": "40",
-    "url": "https://www.youtube.com/watch?v=video40",
+    "url": "https://www.youtube.com/embed/VhC_wAsw2-c",
     "category": "Chatbot",
     "publicationDate": "2026-04-01",
     "relevance": 4,

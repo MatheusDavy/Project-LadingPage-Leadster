@@ -2,6 +2,7 @@
 
 // Animation Scripts
 import '../animation/main'
+import { callAnimations } from '@/animation/scripts/enter'
 
 import { GlobalStyle } from '@/styles/global-styles'
 import { ThemeProvider } from 'styled-components'
@@ -39,9 +40,9 @@ export default function RootLayout({
           <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
           
         </head>
-        <body className={PlusJakartaSans.className}>
+        <body className={PlusJakartaSans.className} onload={callAnimations()}>
           <ThemeProvider theme={theme}>
-            <GlobalStyle />
+            <GlobalStyle/>
             <Header />
             {children}
             <Footer />
