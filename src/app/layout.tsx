@@ -2,7 +2,6 @@
 
 // Animation Scripts
 import '../animation/main'
-import { callAnimations } from '@/animation/scripts/enter'
 
 import { GlobalStyle } from '@/styles/global-styles'
 import { ThemeProvider } from 'styled-components'
