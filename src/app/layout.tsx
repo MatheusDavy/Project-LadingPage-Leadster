@@ -38,7 +38,6 @@ export default function RootLayout({
         window.dataLayer.push({
           event: "video_start",
           video_title: "video title de teste 01",
-          origin_url: 'pagina de origin é home',
         });
       }
     }
@@ -53,14 +52,17 @@ export default function RootLayout({
         <meta name="keywords" content="Webnars, Landster, landing page, marketing, chatboot, geraçao de leads, mídia paga, agências" />
         <meta name="author" content="Matheus Davy" />
         <link rel="shortcut icon" href={Favicon.src} type="image/x-icon" />
+
+        {/* GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ7NDJ16WE"></script>
         <Script
           dangerouslySetInnerHTML={{
             __html: `
-            (function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P34C3MPP')  
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-FQ7NDJ16WE');
           `}}
         />
 
@@ -74,7 +76,7 @@ export default function RootLayout({
 
         </ThemeProvider>
 
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P34C3MPP"
+        <noscript><iframe src=""
           height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
 
       </body>
