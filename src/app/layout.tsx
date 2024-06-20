@@ -33,12 +33,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   useEffect(() => {
-    if (window.dataLayer != undefined) {
-      window.dataLayer.push({
-        event: "view_item",
-        video_title: "video title de teste 01",
-        origin_url: 'pagina de origin é home',
-      });
+    if (typeof window !== 'undefined') {
+      if (window.dataLayer !== undefined) {
+        window.dataLayer.push({
+          event: "view_item",
+          video_title: "video title de teste 01",
+          origin_url: 'pagina de origin é home',
+        });
+      }
     }
   }, [])
 
